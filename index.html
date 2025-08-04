@@ -1,0 +1,912 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      
+        .container{
+            height:calc(auto);
+            
+            border: 4px solid black;
+          
+        }
+
+        .heading1{
+            border: 1px solid rgb(82, 4, 4);
+            height: 70px;
+            background-color: rgba(231, 179, 83, 0.671);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            align-items: center;
+            width: 100%;
+             color: rgb(0, 0, 0);
+            padding: 20px;
+            gap: 40px;
+            list-style: none;
+
+        }
+
+
+        .heading{
+            border: 1px solid rgb(82, 4, 4);
+            
+            background-color: aqua;
+            display: flex;
+            float: right;
+           
+            
+            gap: 40px;
+            list-style: none;
+        }
+
+        .heading1:hover{
+            text-decoration: underline;
+        }
+
+        .list{
+            color: black;
+        }
+
+        .list:hover{
+             color: blue;
+            text-decoration: underline;
+        }
+
+        .s1{
+            height: 80px ;
+            width: 250px;
+            padding-left: 20px;
+        }
+
+        nav{
+            display: flex;
+            border: 1px solid black;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.884);
+            width: 100%;
+        }
+
+        .list2{
+            list-style: none;
+            display: flex;
+            
+            gap: 60px;
+        }
+
+        .input{
+            padding-right: 80px;
+            border: none;
+            
+            height: 30px;
+            text-decoration: underline;
+        }
+
+        .menu{
+            display: none;
+            padding: 0 20px;
+            font-size: 30px;
+        }
+
+        .imageslogo{
+           height: 500px; 
+            width: 100%;
+        }
+
+        .logo2{
+            
+            width: auto;
+            display: none;
+            
+            
+        }
+
+           .trending{
+
+          
+            width: 100%;
+            
+        }
+
+        .tending2{
+            display: none;
+            width: auto;
+        }
+
+        .shoes{
+            border: 1px solid rgb(184, 11, 11) ;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            margin-bottom: 40px;
+            gap: 80px;
+            margin-left: 30px;
+            padding-block: 80px;
+            
+            transform: scale(1,1);
+        }
+
+
+        .box1{
+            border: 1px solid black;
+            height: 380px ;
+            width: 380px;
+            
+           
+            border-radius: 20px;
+            
+            border:none;
+          
+            
+        }
+
+        .box1:hover{
+
+            transform: scale(1.1);
+            transition: 0.4s;
+
+            -webkit-box-shadow: 6px 19px 46px 13px rgba(255, 255, 255, 1);
+-moz-box-shadow: 6px 19px 46px 13px rgba(255, 255, 255, 1);
+box-shadow: 6px 19px 46px 13px rgba(255, 255, 255, 1);
+
+        }
+
+        .new{
+            width: 80px;
+            margin: 20px;
+            background-color: rgba(0, 0, 255, 0.731);
+            color: white;
+            font-size: 20px;
+            float: left;
+            border-radius: 5px;
+        }
+
+        .new:hover{
+            background-color: black;
+        }
+
+        .like{
+            
+            float: right;
+            font-size: 40px;
+            margin: 20px;
+
+        }
+
+        .shoesimages{
+            
+            width: 270px;
+          
+            
+        }
+
+        .font{
+            font-size: 15px;
+        }
+
+        .font2{
+            font-size: 25px;
+            font-family: serif;
+            
+        }
+
+        .price{
+            margin-top: 10px;
+            font-size: 25px;
+            font-family: fantasy;
+
+        }
+
+
+
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            padding-block: 50px;
+            justify-content: center;
+        }
+
+        .trad{
+            text-align: center;
+            font-size: 40px;
+            padding-block: 30px;
+            width: 100%;
+        }
+
+
+        .women{
+            width: 100%;
+            height: 400px;
+
+        }
+
+        .women2{
+            display: none;
+        }
+
+        .sports{
+            display: flex;
+            padding-block: 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .picball{
+            max-width: 600px;
+        }
+
+        .Basketball{
+            max-width: 600px;
+        }
+
+        .cricket{
+            max-width: 600px;
+        }
+
+        .collection{
+
+             display: flex;
+            padding-block: 30px;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .KIDS2{
+            
+            width: 400px;
+           
+            margin-top: 25px;
+            
+        }
+
+        .KIDS{
+            
+            display: flex;
+            flex-wrap: wrap;
+           max-width: 400px;
+        }
+
+        .kids3{
+            max-width: 500px;
+        }
+
+        .colo{
+            margin-left: 90px;
+            
+            text-decoration: underline;
+        }
+
+
+        .pragraph{
+            background-color: rgba(0, 0, 0, 0.363);
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            
+            padding-block: 30px;
+            
+        }
+
+        .online{
+            display: flex;
+            
+            flex-wrap: wrap;
+            gap: 100px;
+            
+            text-align: center;
+            padding-top: 20px;
+            
+            
+        }
+
+        h3{
+            font-size: 30px;
+            text-align: center;
+            margin-top: 10px;
+            
+            color: rgba(95, 43, 226, 0.87);
+        }
+
+
+        .online1{
+            border: 1px solid black;
+          
+            padding-top: 20px;
+            border: none;
+            width: 370px;
+            text-align: center;
+            margin: auto;
+            
+            color: black;
+               
+            font-size: 20px;
+         }
+
+         p{
+            font-size: 20px;
+           margin-top: 20px;
+            margin-left: 30px;
+         }
+
+         .shop{
+            font-size: 100px;
+            margin-top: 30px;
+         }
+
+         .pragraph2{
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(194, 196, 196, 0.858);
+            justify-content: center;
+         }
+
+         .p1{
+            font-size: 35px;
+            margin-left: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+         }
+
+         .p2{
+            margin-left: 20px;
+            font-size: 25px;
+            margin: 100px;
+            padding-bottom: 30px;
+         }
+
+
+         .box6{
+            border: 1px solid black;
+            background-color: rgba(222, 231, 231, 0.495);
+            display: flex;
+            padding-block: 30px;
+            border:none;
+            flex-wrap: wrap;
+         }
+
+         .text3{
+            font-size: 20px;
+            margin-left: 20px;
+            padding-block: 30px;
+            
+
+         }
+
+
+
+         footer{
+            display: flex;
+            flex-wrap: wrap;
+         }
+
+
+         .box7{
+            border: 1px solid black;
+            background-color: #98b1db;
+            padding-block: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            border: none;
+            width: 100%;
+            
+         }
+
+
+
+         .box8{
+            border: 1px solid black;
+            background-color: #98b1db;
+            padding-bottom: 30px;
+            display: flex;
+            border: none;
+            gap: 80px;
+            flex-wrap: wrap;
+            width: 100%;
+            
+         }
+
+
+
+         .skech{
+            height: 80px;
+            width: 340px;
+            margin-left: 30px;
+            
+         }
+
+
+         h6{
+            font-size: 40px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            color: rgba(0, 0, 0, 0.92);
+            margin-left: 40px;
+         }
+
+
+         
+         .h6{
+            font-size: 30px;
+            margin-top: 10px;
+            color: rgba(0, 0, 0, 0.648);
+            margin-left: 50px;
+            list-style: none;
+            
+         }
+
+
+         .footerlist1{
+            list-style: none;
+            display: inline;
+            font-size: 40px;
+            margin-left: 20px;
+         }
+
+
+         
+         
+
+
+
+
+            /* media quary */
+
+
+         @media (max-width: 1250px) {
+
+            .heading1{
+                display: none;
+            }
+
+            .list2{
+                display: none;
+            }
+
+             .input{
+                display: none;
+            }
+
+            .menu{
+                display: block;
+            }
+
+
+          }
+
+           @media (max-width: 800px){
+                
+            .imageslogo{
+                
+              width: auto;
+              display: none;
+
+            }
+            h1{
+                display: flex;
+                justify-content: center;
+            }
+
+            .logo2{
+                display: block;
+                width: 100%;
+                
+            }
+
+            .women{
+                display: none;
+            }
+
+            .women2{
+                display: block;
+            }
+
+         }
+
+
+         @media(max-width: 550px){
+            .online{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+            }
+
+           
+         }
+
+
+       
+    </style>
+</head>
+<body>
+
+
+
+            <!-- header -->
+
+    <div class="container">
+         <div class="heding">
+        
+            <ul class="heading1">
+                <li ><i class="fa-solid fa-right-to-bracket"></i>Login/signup</li>
+                <li><i class="fa-solid fa-user"></i>My Account</li>
+                <li><i class="fa-solid fa-truck"></i>Track Order</li>
+                <li><i class="fa-solid fa-location-dot"></i>Stores</li>
+                <li><i class="fa-solid fa-circle-question"></i>Help</li>
+             
+                </ul>
+           
+          </div>
+
+          <header>
+
+            <nav>
+                <div class="s1"><img height="100%" width="100%" src="./images/Skechers_Performance_Logo_white_text (2).png" alt=""></div>
+                <ul class="list2">
+                    <li>WOMEN</li>
+                    <li>MEN</li>
+                    <li>KIDS</li>
+                    <li>APPARELS</li>
+                    <li>OLLECTIONS</li>
+                    <li>SPORTS</li>
+                    <li>SALE</li>
+                </ul>
+                <div class="input"><input class="input" type="text" placeholder="Search "></div>
+
+
+                <div class="menu">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+            </nav>
+          </header>
+
+
+
+
+
+          <div class="imageslogo">
+            <img height="100%" width="100%" src="https://www.skechers.in/dw/image/v2/BGNZ_PRD/on/demandware.static/-/Sites-skechersin-Library/default/dwda1c4d2f/Home-Page/Desktop/25-06-SKECHERS-12345823-SLIP-IN_OUTDOOR_KV_A_CC-1920-x-603.jpg?sw=1100&q=95" alt="">
+           
+          </div>
+
+          <div class="logo2"> <img height="100%" width="100%" src="https://www.skechers.in/dw/image/v2/BGNZ_PRD/on/demandware.static/-/Sites-skechersin-Library/default/dw95d4e2ce/Home-Page/Mobile/25-06-SKECHERS-12345823-SLIP-IN_OUTDOOR_KV_A_CC-780px-x-1140px.jpg?sw=780&q=95" alt="" class="logo2"></div>
+
+
+          
+          <!-- section -->
+
+          <div class="shoes">
+            
+            <div class="box1">
+                <button class="new">New</button>
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
+                <div class="shoesimages"><img height="100%" width="100%" src="https://img.pchome.com.tw/cs/items/DXAX7VA900IFWD3/000001_1741723821.jpg" alt="">
+                <div class="font">men'S <br><div class="font2">SMAX CUSHIONING GLIDE-STEP - A</div></div>
+                <div class="price">MRP ₹ 11,999.00 </div> 
+            </div>
+            </div>
+
+
+              <div class="box1">
+                <button class="new">New</button>
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
+                <div class="shoesimages"><img height="100%" width="100%" src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dw27cd62c2/images/large/198376367657-1.jpg" alt="">
+                <div class="font">Women'S <br><div class="font2">SMAX CUSHIONING GLIDE-STEP </div></div>
+                <div class="price">MRP ₹ 10,999.00 </div> 
+            </div>
+            
+            </div>
+
+              <div class="box1">
+                <button class="new">New</button>
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
+                <div class="shoesimages"><img height="100%" width="100%" src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dwf223e810/images/large/198376838140-1.jpg" alt="">
+                <div class="font">men'S <br><div class="font2">SMAX CUSHIONING GLIDE-STEP - A</div></div>
+                <div class="price">MRP ₹ 11,999.00 </div> 
+            </div>
+            
+            </div>
+
+
+              <div class="box1">
+                <button class="new">New</button>
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
+                <div class="shoesimages"><img height="100%" width="100%" src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dw4016f113/images/large/198376367770-1.jpg" alt="">
+                <div class="font">Women'S <br><div class="font2">SMAX CUSHIONING GLIDE-STEP - A</div></div>
+                <div class="price">MRP ₹ 10,999.00 </div> 
+            </div>
+            
+            </div>
+                    
+        </div>
+
+
+
+        <section>
+            <div class="trad"><b>Trending </b></div>
+            <div class="women"><img height="100%" width="100%" src="https://www.skechers.in/dw/image/v2/BGNZ_PRD/on/demandware.static/-/Sites-navigation-skechers-india/default/dw72f3b221/Skechers-Street-inside%20-banner-desktop.jpg?sw=1600" alt=""></div>
+
+            <div class="women2"><img height="100%" width="100%" src="./images/24-09-SKECHERS-12215500-MK-400px-x-500px-ANANYA-PINK-HOARDING_CC.webp" alt=""></div>
+        </section>
+
+
+        <section>
+            <div class="trad"><b>Built for Game Changers: Play Your Way! </b></div>
+            <div class="sports">
+                <div class="picball"><img height="100%" width="100%" src="./images/Home-page-PICKLEBALL-Desktop-15-07-2025.webp" alt=""></div>
+            <div class="Basketball"><img height="100%" width="100%" src="./images/Home-page-Basket-Ball-Desktop-15-07-2025.webp" alt=""></div>
+            <div class="cricket"><img height="100%" width="100%" src="./images/Home-page-Cricket-Desktop-15-07-2025.webp" alt=""></div>
+            </div>
+            
+            
+        </section>
+
+        
+        <section>
+            <div class="trad"><b>What's Hot? </b></div>
+            <div class="collection">
+                <div class="KIDS"><img class="kids3" height="100%" width="100%" src="./images/homepage_trending_collections-sandals.webp" alt="">
+                    <b class="colo">SANDALS  >></b></div>
+            <div class="KIDS"><img height="100%" width="100%" src="./images/homepage_trending_collections-kids.webp" alt="">
+            <b class="colo">SLIP-INS>></b></div>
+            <div class="KIDS"><img height="100%" width="100%" src="./images/homepage_trending_collection_apparel.webp" alt=""><b class="colo">APPARELS  >></b></div>
+            </div>
+            
+            
+        </section>
+
+
+
+        <section>
+            <div class="trad"><b>Shop By Gender </b></div>
+            <div class="collection">
+                <div class="KIDS"><img height="100%" width="100%" src="./images/Homepage-shop_by_gender-women.webp" alt="">
+                    <b class="colo">SHOP WOMEN'S >></b></div>
+            <div class="KIDS"><img height="100%" width="100%" src="./images/Homepage-shop_by_gender-men.jpg" alt="">
+            <b class="colo">SHOP MEN'S >></b></div>
+            <div class="KIDS"><img height="100%" width="100%" src="./images/homepage_trending_collections-kids.webp" alt=""><b class="colo">SHOP KIDS >></b></div>
+            </div>
+            
+            
+        </section>
+
+
+
+       
+
+         <div class="shoes">
+            
+            <div class="box1">
+                
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
+                <div class="shoesimages"><img height="100%" width="100%" src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dwee578f6b/images/large/195204539835-1.jpg" alt="">
+                <div class="font">men'S <br><div class="font2">GO WALK 6 - COMPETE</div></div>
+                <div class="price">MRP ₹7,499.00 </div> 
+            </div>
+            </div>
+
+
+              <div class="box1">
+               
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
+                <div class="shoesimages"><img height="100%" width="100%" src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dw7b92fc84/images/large/196989059549-1.jpg" alt="">
+                <div class="font">Women'S <br><div class="font2">ARCH FIT </div></div>
+                <div class="price">MRP ₹8,499.00</div> 
+            </div>
+            
+            </div>
+
+              <div class="box1">
+                <button class="new">New</button>
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
+                <div class="shoesimages"><img height="100%" width="100%" src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dw5c9aebd8/images/large/196642832175-1.jpg" alt="">
+                <div class="font">Women'S <br><div class="font2">GO WALK 6 - OCEAN SPLASH</div></div>
+                <div class="price">MRP ₹7,499.00</div> 
+            </div>
+            
+            </div>
+
+
+              <div class="box1">
+                
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
+                <div class="shoesimages"><img height="100%" width="100%" src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dw14e93836/images/large/195969024140-1.jpg" alt="">
+                <div class="font">Women'S <br><div class="font2">GO WALK 6 - COMPETE</div></div>
+                <div class="price">MRP ₹7,499.00</div> 
+            </div>
+            
+            </div>
+                    
+        </div>
+
+
+
+
+        <section class="pragraph">
+            <div >
+                <h3>SHOP WITH CONFIDENCEAT SKECHERS ONLINE STORE</h3>
+
+                <div class="online">
+
+
+                    <div class="online1">OFFICIAL BRANDE STORE:
+                        <p>The largest selection of 100% official Skechers products in india.</p>
+                        <i class="fa-solid fa-shop shop" style="color: #2a6ee5;"></i>
+                    </div>
+                    
+                <div class="online1">SHOAP AT YOUR COVENIENCE:
+                        <p>Free home delivery within 10 working days.*</p>
+                        <i class="fa-solid fa-truck-fast shop" style="color: #376cc8;"></i>
+                    </div>
+
+                    <div class="online1">SAFE SHOPPING:       
+                        <p>secure stock layer (SSL) encrypation makes every payment safe.</p>
+                       <i class="fa-solid fa-bag-shopping shop" style="color: #4d7bcb;"></i>
+                    </div>
+
+                    <div class="online1">EVERY RETURN POLICY:
+                        <p>Easy & hassle free return of products.*</p>
+                        <i class="fa-solid fa-calendar-check shop" style="color: #2b69d4;"></i> 
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <div class="pragraph2">
+            <p class="p1">Unlock Your True Potential with Skechers: The Ultimate Footwear Experience</p>
+            <p class="p2">
+                 Unlock Your True Potential with Skechers: The Ultimate Footwear Experience <br>
+Skechers, a free-spirited lifestyle brand brings an assortment of trendy apparel, accessories, and comfort footwear online for men, women, and kids. Vibrant designs, vast collection of products, new age technology, discounted rates and customer rewards make Skechers an exclusive lifestyle brand for both in-store and online shopping. Skechers India is an ideal digital platform to suit the Indian customers with a latest range of clothing and best collection of shoes online. Whether you are an outdoor enthusiast, a consistent fitness freak or a light walker, the collection of Skechers shoes online can be selected to support specific activities like running, hiking, training, and walking. Start using an interactive shoe finder to find your best match of Skechers footwear. <br>
+
+
+
+Customers worldwide  <a href="read.html">Read More</a>  
+            </p>
+        </div>
+
+
+
+        <div class="box6">
+            <div class="text3"><b>POPULAR SEARCHERS</b></div>
+            <p>Women's Shoes | Walking Shoes for Women | Walking Shoes for Men | Men's Shoes | Running Shoes for Women | Running Shoes for Men | Women's Slippers | Men's Slippers | Kids Shoes | Slip-Ins | Men's Jackets | Women's Jacket | Men's T-Shirts | Sports Bra | Arch Fit Shoes| Memory Foam| Goga Mat | GO Walk| James Gold Crown Collection | GO Run | Mark Nason | Kids Light Up Shoes | Tokidoki | Shoes Sale| Running Shoes | Walking Shoes | Trail-Hiking | Black Shoes | White Shoes | Pink Shoes | Blue Shoes |</p>
+        </div>
+
+
+
+
+
+
+
+        <!-- footer -->
+        <footer>
+
+
+            <div class="box7">
+            <div class="skech"><img height="100%" width="100%"  src="./images/Skechers_logo_blue-removebg-preview.png" alt=""></div>
+
+            </div>
+
+
+            <div class="box8">
+                <ul class="footerlist">
+                <h6>About Skechers</h4>
+                <li class="h6">Corporate info</li>
+                <li class="h6">Corporate Governance</li>
+                
+            </ul>
+
+              <ul class="footerlist">
+                <h6>Customer Service</h4>
+                <li class="h6">Return Policy</li>
+                <li class="h6">Product Information</li>
+                <li class="h6">Contact Us</li>
+                <li class="h6">Sitemap</li>
+                
+            </ul>
+
+
+              <ul class="footerlist">
+                <h6>My Account</h4>
+                <li class="h6">Order Status</li>
+                <li class="h6">Saved Products</li>
+                <li class="h6">My Returns</li>
+                
+            </ul>
+
+
+              <ul class="footerlist">
+                <h6>Others</h4>
+                <li class="h6">FAQ  </li>
+                <li class="h6">Terms & Conditions</li>
+                <li class="h6">Privacy Policy</li>
+                <li class="h6">Find A Store</li>
+                
+                
+                
+            </ul>
+
+              <ul class="footerlist">
+                <h6>Follow us</h4>
+                <li class="footerlist1"> <i class="fa-brands fa-facebook-f" style="color: #196af5;"></i> </li>
+                <li class="footerlist1"> <i class="fa-brands fa-twitter" style="color: #0d5be3;"></i></li>
+                <li class="footerlist1"> <i class="fa-brands fa-instagram" style="color: #2470f5;"></i></li>
+                <li class="footerlist1"><i class="fa-brands fa-youtube" style="color: #1868f2;"></i></li>
+                
+                
+                
+            </ul>
+
+            
+
+            </div>
+
+            
+
+              
+
+
+
+                    
+
+
+
+        </footer>
+        
+
+
+
+        
+
+
+
+
+
+           
+
+        </div>
+
+
+    
+
+       
+
+
+      
+        
+
+       
+
+
+
+       
+
+       
+
+
+    
+    
+</body>
+</html>
